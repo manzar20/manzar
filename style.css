@@ -1,0 +1,501 @@
+body {
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+/*start header*/
+header {
+    width: 100%;
+    background-color: #00579b;
+}
+header .continer {
+    width: 95%;
+    margin: 0 auto;
+}
+/*header_top*/
+header .continer .top_header {
+    width: 100%;
+    padding: 8px 0;
+}
+header .continer .top_header a {
+    color: white;
+    font-size: 18px;
+    margin-right: 25px; 
+    padding-bottom: 5px;
+    position: relative;
+    letter-spacing: 2px;
+}
+header .continer .top_header a:nth-child(2) span {
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    background-color: rgb(248, 191, 3);
+    bottom: -2px;
+    left: 0;
+    transition: all 0.5s;
+}
+header .continer .top_header a:nth-child(2):hover span {
+    width: 100%;
+}
+header .continer .top_header a:nth-child(1) span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(248, 191, 3);;
+    bottom: -2px;
+    left: 0;
+    transition: all 0.5s;
+}
+header .continer .top_header a:nth-child(1):hover span {
+    width: 0%;
+}
+/*bottom_header*/
+header .bottom_header {
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+header .menu {
+    width: 320px;
+    position: relative;
+    
+}
+header .Mother_List {
+    width: 29px;  
+}
+header .menu  .Mother_List .Mother_List_li > a{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: block;
+    height: 37px;
+}
+header .menu  .Mother_List .hidden {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    padding: 5px 0px;
+    display: none;
+    z-index: 2;
+}
+header .menu  .Mother_List:hover .hidden {
+    display: block;
+
+}
+header .menu  .Mother_List .hidden ul a{
+    color: black;
+    padding: 10px 10px;
+    border-bottom: 1px solid gray;
+    display: block;
+}
+header .menu  .Mother_List .hidden ul a:hover{
+    background-color: black;
+    color: white;
+    animation-name: mouv;
+    animation-duration: 0.20s;
+    animation-iteration-count: 1;
+}
+@keyframes mouv{
+    0%{
+        margin-left: 0;
+    }
+    50%{
+        margin-left: 15px;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+header .menu  .Mother_List .hidden .Side_menu_1 {
+    background: rgba(255, 255, 255, 0.83);
+    position: absolute;
+    display:none;
+    left: 0px;
+    top: 25px;
+    z-index: 1;
+    transition: all 1s;
+    width:  400px;
+    
+
+
+}
+@keyframes flow {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+header .menu  .Mother_List .hidden .hover_Side_menu_1:hover .Side_menu_1 {
+    display: inline-block;
+    left: 320px;
+    animation-name: moving;
+    animation-duration: 0.75s;
+    animation-iteration-count: 1;
+    animation-name: flow;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+}
+@keyframes moving{
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 320px;
+    }
+}
+header .menu  .Mother_List .hidden .Side_menu_1 h3 {
+    margin-left: 24px;
+    font-weight: unset;
+    letter-spacing: 2px;
+}
+header .menu  .Mother_List .hidden .Side_menu_1 a{
+    color: #7b7b76;
+    border: none;
+   padding: 0 25px;
+   margin: 10px 0;
+   background: none;
+}
+header .menu  .Mother_List .hidden .Side_menu_1 a:hover{
+    color: #0c0c0c;
+    text-decoration: underline;
+    background: none;
+}
+header .menu  .Mother_List .hidden .Side_menu_2 {
+    background: rgba(255, 255, 255, 0.83);
+    position: absolute;
+    display: none;
+    left: 320px;
+    top:-610px;
+    width: 400px;
+    z-index: -10;
+    
+}
+header .menu  .Mother_List .hidden .hover_Side_menu_2:hover .Side_menu_2 {
+    display: inline-block;
+    top: 25px;
+    animation-name: Down;
+    animation-duration: 0.75s;
+    animation-iteration-count: 1;
+}
+@keyframes Down{
+    0% {
+        top:-610px;
+    }
+    100% {
+        top:18px;
+    }
+}
+header .menu  .Mother_List .hidden .Side_menu_2 h3 {
+    margin-left: 24px;
+    font-weight: unset;
+    letter-spacing: 2px;
+}
+header .menu  .Mother_List .hidden .Side_menu_2 a{
+    color: #7b7b76;
+    border: none;
+    padding: 5px 25px;
+    background: none;
+}
+header .menu  .Mother_List .hidden .Side_menu_2 a:hover{
+    color: #0c0c0c;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background: none;
+}
+
+
+header .menu  .Mother_List .hidden .Side_menu_3 div {
+    width: 300px;
+}
+header .menu  .Mother_List .hidden .Side_menu_3 {
+    background: rgba(255, 255, 255, 0.83);
+    position: absolute;
+    left: 320px;
+    width: 600px;
+    top: 84px;
+    display:none;
+    border: 1px solid #e3dede;
+    padding: 15px;
+}
+header .menu  .Mother_List .hidden .hover_Side_menu_3:hover .Side_menu_3 {
+    display: block;
+    display:flex;
+    z-index: 10;
+    animation-name: opacity;
+    animation-duration: 0.75s;
+    animation-iteration-count: 1;
+}
+@keyframes opacity{
+    0% {
+        opacity: 0;
+        left: 420px;
+    }
+    50% {
+        opacity: 0.5;
+        left: 320px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+header .menu  .Mother_List .hidden .Side_menu_3 a{
+    color: #7b7b76;
+    border: none;
+    padding: 5px 25px;
+    background: none;
+}
+header .menu  .Mother_List .hidden .Side_menu_3 a:hover{
+    color: white;
+    border-radius: 15px 1px;
+    background: #494848;
+    width: 51%;
+}
+/*logo*/
+header .bottom_header .logo {
+    margin-left: -252px;
+    margin-right: 30px;
+    z-index: 1;
+} 
+header .bottom_header .logo a {
+    color: white;
+    font-size: 22px;
+    margin-top: 4px;
+    display: inline-block;
+    font-family: monospace;
+}
+header .bottom_header .logo a:hover {
+    border-bottom: 1px solid;
+}
+header .bottom_header .logo a span {
+    color: #ffc220;
+}
+/*form*/
+header .bottom_header .form form {
+    margin-left: 160px;
+}
+header .bottom_header .form form button:nth-child(1){
+    width: 40px;
+    height: 37px;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 25px 0px 0px 25px;
+    margin-right: -4px;
+}
+header .bottom_header .form form input[type=search]{
+    width: 425px;
+    height: 37px;
+    border: none;
+    outline: none;
+}
+header .bottom_header .form form button {
+    width: 40px;
+    height: 37px;
+    border: none;
+    background: #ffc220;
+    margin-left: -4px;
+    border-radius: 0px 25px 25px 0;
+}
+/*bubble*/
+header .bottom_header .bubble {
+    width: 254px;
+    margin-left: 151px;
+}
+header .bottom_header .bubble ul {
+    display: flex;
+    height: 100%;
+}
+header .bottom_header .bubble ul a {
+    color: white;
+    font-size: 17px;
+    margin-top: 7px;
+    display: inline-block;
+    margin-left: 25px;
+    transition: all 1s;
+    
+}
+header .bottom_header .bubble ul a:hover {
+    color: #ffc220;
+}
+/**/
+main {
+    width: 100%;
+}
+main .CategoryApp {
+    width: 100%;
+    display: flex;
+    height: 505px;
+}
+main .CategoryApp .Container {
+    width: 30%;
+    background-color: #9ed3f9;
+    line-height: 1.5;
+}
+main .CategoryApp .Container:hover h3 {
+    animation-name: left;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+main .CategoryApp .Container:hover h1 {
+    animation-name: left;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+main .CategoryApp .Container:hover h2 {
+    animation-name: left;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+main .CategoryApp .Container:hover h4{
+    background-color: #60cff3;
+}
+
+@keyframes left{
+    0%{
+       margin-left: 0px;
+     }
+    25%{
+        margin-left: 50px;
+    }
+    50%{
+        margin-left: 0px;
+    }
+    75%{
+        margin-left: 50px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+main .CategoryApp .Container h3 {
+    color: #fff;
+    font-weight: unset;
+    font-size: 21px;
+    margin-left: 34px;
+}
+main .CategoryApp .Container h1 {
+    font-size: 52px;
+    font-weight: unset;
+    color: white;
+    margin-left: 34px;
+
+}
+main .CategoryApp .Container h4 {
+    font-size: 12px;
+    font-weight: unset;
+    border: 1px solid white;
+    color: white;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 25px;
+    margin-top: 70px;
+    margin-left: 120px;
+}
+main .CategoryApp .Container h2 {
+    color: #ffffffde;
+    font-size: 50px;
+    margin-top: 90px;
+    margin-left: 34px;
+}
+main .CategoryApp .img {
+    width: 70%;
+    background-image: url(images/img_Adventure.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+main .CategoryApp .img .background {
+    width: 100%;
+    height: 0%;
+    background-color: #26cbf45c;
+    overflow: hidden;
+    transition: all 1s;
+}
+main .CategoryApp .img:hover .background {
+    height: 100%;
+}
+main .CategoryApp .img .background .content-background {
+    width: 50%;
+    color: white;
+    margin: 0 auto;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 144.5px;
+}
+main  .img .background .content-background h2 {
+    font-size: 50px;
+    font-weight: unset;
+    margin-bottom: 15px;
+}
+main  .img .background .content-background h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+main  .img .background .content-background a {
+    color: white;
+    padding: 12px 90px;
+    display: inline-block;
+    border-radius: 25px;
+    transition: all 0.5s;
+    font-size: 16px;
+    border: 1px solid white;
+}
+main  .img .background .content-background a:hover {
+    border: 1px solid #000;
+    color: black;
+    background: #ffffff47;
+ }
+ /*nav*/
+
+main .nav {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}
+main .nav .ul_nav {
+    display: flex;
+    width: 43%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+main .nav .ul_nav a {
+    color: black;
+    font-size: 18px;
+    display: inline-block;
+    margin:0 20px;
+    margin-top: 16px;
+    padding: 10px 0;
+}
+main .nav .ul_nav_1 {
+    width: 218px;
+    position: absolute;
+    top: 85px;
+    padding: 20px 0;
+}
+main .nav .ul_nav_1 a {
+    padding: 4px 0;
+}
+main .nav .ul_nav_2 {
+    width: 218px;
+    position: absolute;
+    top: 61px;
+    padding: 20px 0;
+}
+main .nav .ul_nav_2 a{
+    padding: 4px 0;
+}
+main .nav .ul_nav_3 {
+    width: 218px;
+    position: absolute;
+    top: 85px;
+    padding: 20px 0;
+}
+main .nav .ul_nav_3 a{
+    padding: 4px 0;
+}
